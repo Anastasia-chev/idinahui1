@@ -169,8 +169,8 @@ function setup() {
   const speedUnits = metric ? "km/h" : "mph";
   let whatsapp = document.getElementById("whatsapp");
   let speed = 0;
-  let websiteURL = ``; //Input your website url here
-  let sharedText = `I missiled putin ${speed}${speedUnits}, check out ${websiteURL}`;
+  let websiteURL = `https://www.www.idi-nahuy-putin.com/`; //Input your website url here
+  let sharedText = `I missiled putin ${speed}${speedUnits}, check out this mini-game ${websiteURL}`;
   whatsapp.href = `https://api.whatsapp.com/send?text=${sharedText}`;
   ready.volume(0.4);
   ready.play();
@@ -247,7 +247,7 @@ function draw() {
     const speed = metric ? Math.floor(speedFloat) : Math.floor(speedFloat / 1.609);
     const speedUnits = metric ? "km/h" : "mph";
     score.innerHTML = `${speed}${speedUnits}`;
-    let websiteURL = ``; //Input your website url here
+    let websiteURL = `https://www.www.idi-nahuy-putin.com/`; //Input your website url here
     let sharedText = `I missiled putin ${speed}${speedUnits}, check out ${websiteURL}`;
     let whatsapp = document.getElementById("whatsapp");
     whatsapp.href = `https://api.whatsapp.com/send?text=${sharedText}`;
